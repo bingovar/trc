@@ -1,0 +1,66 @@
+@import "../variables";
+
+.requisites-right {
+	width: 100%;
+	padding: 2.5vw 4vw;
+	border-radius: 10px;
+	background-color: #f0f1f1;
+	position: relative;
+	overflow: hidden;
+	align-self: flex-start;
+	z-index: 2;
+}
+
+@media screen and (max-width:900px) {
+	.requisites-right {
+		padding: 2.5rem 3rem;
+		width: 28rem;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.requisites-right {
+		width: 100%;
+		margin-top: 3rem;
+	}
+}
+
+.requisites-right__bg-img {
+	z-index: -1;
+}
+
+.requisites-right__block {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	margin-bottom: 1vw;
+}
+
+@media screen and (max-width:900px) {
+	.requisites-right__block {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.requisites-right__block-item {
+	width: 48%;
+}
+
+.requisites-right__input,.requisites-right__submit-button {
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width:900px) {
+	.requisites-right .psdf {
+		display: none;
+	}
+
+	.requisites-right .tsm12 {
+		font-size: .9rem;
+	}
+
+	.requisites-right__block-item {
+		width: 100%;
+	}
+}

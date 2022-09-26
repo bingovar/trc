@@ -1,0 +1,63 @@
+@import "../variables";
+
+.button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.2vw 1.4vw;
+	transition: all .3s;
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+	position: relative;
+	font-size: 16px;
+	font-weight: 500;
+	background-color: #e3e3e3;
+	color: #282828;
+}
+
+.button:hover {
+	transform: scale(1.03);
+}
+
+.button:disabled {
+	cursor: not-allowed;
+	box-shadow: none;
+	opacity: .65;
+}
+
+.button:disabled:hover {
+	transform: none;
+}
+
+.button_font-size-vw {
+	font-size: .92vw;
+}
+
+@media screen and (max-width:900px) {
+	.button_font-size-vw {
+		font-size: 1.1rem;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.button_font-size-vw {
+		font-size: 1.2rem;
+	}
+}
+
+.button_regular {
+	background: none;
+	border: 1px solid #9f9f9f;
+}
+
+.button_accent {
+	color: #333;
+	background-color: #fbec42;
+}
+
+@media screen and (max-width:900px) {
+	.button_mobile-big {
+		padding: 1.3rem 1rem;
+	}
+}

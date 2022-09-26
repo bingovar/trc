@@ -1,0 +1,19 @@
+@import "../variables";
+
+.file-input__button-wrapper {
+	flex-shrink: 1;
+}
+
+.file-input__button {
+	border-radius: 0 10px 10px 0;
+	background-color: #bdbdbd;
+	color: #fff;
+	padding: 1.2vw 1.7vw;
+	cursor: pointer;
+}
+
+@media screen and (max-width:900px) {
+	.file-input__button {
+		padding: 1.2rem 1.7rem;
+	}
+}

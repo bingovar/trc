@@ -1,0 +1,1 @@
+export const isIos = /(iPad|iPhone|iPod)/g.test(navigator.userAgent) && !window.MSStream;

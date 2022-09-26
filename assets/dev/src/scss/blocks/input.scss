@@ -1,0 +1,100 @@
+@import "../variables";
+
+
+.input {
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	margin: 0;
+}
+
+.input_title-right {
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.file-input__title,.input__title {
+	font-size: .85vw;
+	color: #7f7f7f;
+	transition: color .3s;
+	display: block;
+	margin-bottom: .7vw;
+	flex-grow: 0;
+}
+
+@media screen and (max-width:900px) {
+	.file-input__title,.input__title {
+		font-size: 1rem;
+		margin-bottom: 1rem;
+	}
+}
+
+@media screen and (max-width:567px) {
+	.file-input__title,.input__title {
+		font-size: 1.6rem;
+		margin-bottom: .8rem;
+	}
+}
+
+.input__title_right {
+	margin: 0 0 0 15px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #282828;
+}
+
+.input-error .file-input__title,.input-error .input__title {
+	color: #e31720;
+}
+
+@media screen and (max-width:900px) {
+	.input__input {
+		font-size: 1.1rem;
+		padding: 1.3rem 1rem 1.3rem 2rem;
+	}
+}
+
+@media screen and (max-width:567px) {
+	.input__input {
+		font-size: 1.6rem;
+	}
+}
+
+.input__input_num {
+	max-width: 100px;
+}
+
+.input__input_textarea {
+	flex-basis: 100%;
+	flex-shrink: 1;
+	min-height: 80px;
+}
+
+.input__input_thin {
+	padding: 1vw;
+}
+
+@media screen and (max-width:768px) {
+	.input__input_thin {
+		padding: 1.3rem 1rem;
+	}
+}
+
+.input__input_num {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.input__input::placeholder {
+	transition: color .3s;
+}
+
+.input-error .input__input {
+	color: #e31720;
+}
+
+.input-error .input__input::placeholder {
+	color: #e31720;
+}

@@ -1,0 +1,25 @@
+//Colors
+$bg-color-0: #000000;
+$bg-color-1: #ffffff;
+$bg-color-2: #f0f1f1;
+$bg-color-3: #9f9f9f;
+$bg-color-4: #e3e3e3;
+$bg-color-5: #bdbdbd;
+
+$color-0: #000000;
+$color-1: #ffffff;
+$color-2: #282828;
+$color-3: #7f7f7f;
+
+$error-color: #e31720;
+$accent-color-1: #69e317;
+$accent-color-2: #fbec42;
+
+//Media
+$tablet-md: 900px;
+$tablet-sm: 768px;
+$phone-md: 567px;
+
+$media-tablet-md: "screen and (max-width: #{$tablet-md})";
+$media-tablet-sm: "screen and (max-width: #{$tablet-sm})";
+$media-phone-md: "screen and (max-width: #{$phone-md})";

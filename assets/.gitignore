@@ -1,0 +1,4 @@
+/dev/package-lock.json
+/dist
+/dev/deploy/tmp
+node_modules

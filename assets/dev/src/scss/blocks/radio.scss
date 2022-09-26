@@ -1,0 +1,20 @@
+@import "../variables";
+
+.radio {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+@media (max-width:567px) {
+	.radio {
+		margin-top: 6px;
+		margin-bottom: 5px;
+	}
+}
+
+.radio__input {
+	display: none;
+}

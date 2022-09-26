@@ -1,0 +1,49 @@
+@import "../variables";
+
+@media screen and (max-width:567px) {
+	.form__row {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+}
+
+.form__row_align-bottom {
+	align-items: flex-end;
+}
+
+@media screen and (max-width:567px) {
+	.form__row_align-bottom {
+		align-items: stretch;
+	}
+}
+
+.form__col {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+@media screen and (max-width:567px) {
+	.form__input {
+		margin-bottom: 1.3rem;
+	}
+}
+
+.form__input_full-width {
+	width: 100%;
+}
+
+.form__input_full-height {
+	flex-basis: 100%;
+	flex-shrink: 1;
+}
+
+.form__input_one {
+	flex-basis: 57%;
+}
+
+@media screen and (max-width:567px) {
+	.form__input_one {
+		flex-basis: auto;
+	}
+}
